@@ -5,10 +5,10 @@ error_reporting(0);
 
 
 function call($addr) {
-    $data= "address=$addr&sponsor=20554";
+    $data= "address=$addr&sponsor=30694";
     $cok = tempnam('tmp','avo'.rand(1000000,9999999).'tmp.txt');
-    $c = curl_init("https://thebestbitcoinfaucet.com/");
-    curl_setopt($c, CURLOPT_REFERER, "https://thebestbitcoinfaucet.com/");
+    $c = curl_init("http://cryptofun.space/?id");
+    curl_setopt($c, CURLOPT_REFERER, "http://cryptofun.space/?id");
     curl_setopt($c, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($c, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36");
     curl_setopt($c, CURLOPT_POSTFIELDS, $data);
@@ -34,8 +34,8 @@ function call($addr) {
     
  $data= "faucetclaim=$addr";
     
-    $c = curl_init("https://thebestbitcoinfaucet.com/");
-    curl_setopt($c, CURLOPT_REFERER, "https://thebestbitcoinfaucet.com/");
+    $c = curl_init("http://cryptofun.space/?id");
+    curl_setopt($c, CURLOPT_REFERER, "http://cryptofun.space/?id");
     curl_setopt($c, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($c, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36");
     curl_setopt($c, CURLOPT_POSTFIELDS, $data);
